@@ -2,27 +2,47 @@
 * {
   margin: 0px;
   padding: 0px;
-}
-/* shared */
-
-.font-primary {
   font-family: "Fira Sans", serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
+/* shared */
 
 .button-primary {
   padding: 12px 24px;
-  border: none;
+  border: 1px solid rgb(0, 106, 80);
   border-radius: 6px;
   background: rgb(0, 106, 80);
   color: rgb(255, 255, 255);
-  font-family: Fira Sans;
   font-size: 13px;
   font-weight: 600;
   text-align: center;
 }
+.light-green {
+  background: rgba(9, 161, 92, 0.2);
+}
+.light-blue {
+  background: rgba(84, 144, 245, 0.2);
+}
+.light-yellow {
+  background: rgba(255, 194, 57, 0.2);
+}
 
+.btn-light-green {
+  color: white;
+  background: rgb(9, 161, 92);
+  border: 1px solid rgb(9, 161, 92);
+}
+.btn-light-blue {
+  color: white;
+  background: rgb(84, 144, 245);
+  border: 1px solid rgb(84, 144, 245);
+}
+.btn-light-yellow {
+  color: white;
+  background: rgb(255, 194, 57);
+  border: 1px solid rgb(255, 194, 57);
+}
 /* Navigation Section */
 header .navigation-section {
   padding: 24px 160px;
@@ -31,6 +51,7 @@ header .navigation-section {
 .navigation-section .navigation-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navigation-container h4 {
@@ -47,7 +68,6 @@ header .navigation-section {
   border-radius: 8px;
   padding: 15px 30px 15px 30px;
   color: rgb(0, 106, 80);
-  font-family: Fira Sans;
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
@@ -86,7 +106,6 @@ header .navigation-section {
 }
 #banner-section .col-1 h5 {
   color: rgba(14, 14, 14, 0.5);
-  font-family: Fira Sans;
   font-size: 17px;
   font-weight: 500;
   text-align: left;
@@ -94,7 +113,6 @@ header .navigation-section {
 
 #banner-section .col-1 h2 {
   color: rgb(14, 14, 14);
-  font-family: Fira Sans;
   font-size: 40px;
   font-weight: 700;
   text-align: left;
@@ -126,7 +144,6 @@ header .navigation-section {
 
 #pillars-section .section-title {
   color: rgb(14, 14, 14);
-  font-family: Fira Sans;
   font-size: 28px;
   font-weight: 700;
 }
@@ -140,6 +157,9 @@ header .navigation-section {
 }
 #pillars-section .container .item {
   padding: 18px;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -151,14 +171,104 @@ header .navigation-section {
 }
 #pillars-section .container .item h4 {
   color: rgba(14, 14, 14, 0.8);
-  font-family: Fira Sans;
   font-size: 14px;
   font-weight: 700;
 }
 #pillars-section .container .item p {
   color: rgba(14, 14, 14, 0.7);
-  font-family: Fira Sans;
   font-size: 12px;
+  font-weight: 400;
+}
+/* Vision Section */
+#vision-section {
+  width: 909px;
+  margin: 0 auto;
+  margin-top: 56px;
+}
+#vision-section .section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 17px;
+}
+#vision-section .section-header .header-title {
+  color: rgb(14, 14, 14);
+  font-size: 28px;
+  font-weight: 700;
+}
+#vision-section .section-header .header-description {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 11px;
+  font-weight: 400;
+}
+#vision-section .section-body {
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  gap: 17px;
+}
+#vision-section .section-body .card {
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 17px;
+}
+#vision-section .section-body .card .card-image {
+  max-width: 35px;
+  max-height: 35px;
+}
+#vision-section .section-body .card .card-title {
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 14px;
+  font-weight: 700;
+}
+#vision-section .section-body .card .card-description {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 11px;
+  font-weight: 400;
+}
+#vision-section .section-body .card .card-button {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+}
+#vision-section .section-footer {
+  margin-top: 23px;
+  padding: 34px 17px;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 11px;
+  background: rgb(255, 255, 255);
+
+  background-image: url("../assets/quote-bg.png");
+  background-repeat: no-repeat;
+  background-position: 17px 20px;
+  background-size: 30px;
+}
+
+#vision-section .section-footer .section-footer-destription {
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 11px;
+  font-weight: 400;
+  margin-bottom: 9px;
+}
+#vision-section .section-footer .section-footer-title {
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+#vision-section .section-footer .section-footer-subtitle {
+  color: rgba(14, 14, 14, 0.6);
+  font-size: 11px;
   font-weight: 400;
 }
 /* Hover */
@@ -166,5 +276,24 @@ header .navigation-section {
   border: 1px solid rgb(0, 106, 80);
   background-color: white;
   color: rgb(0, 106, 80);
+  cursor: pointer;
+}
+
+.btn-light-green:hover {
+  background-color: white;
+  color: rgb(9, 161, 92);
+  border: 1px solid rgb(9, 161, 92);
+  cursor: pointer;
+}
+.btn-light-blue:hover {
+  background-color: white;
+  color: rgb(84, 144, 245);
+  border: 1px solid rgb(84, 144, 245);
+  cursor: pointer;
+}
+.btn-light-yellow:hover {
+  background-color: white;
+  color: rgb(255, 194, 57);
+  border: 1px solid rgb(255, 194, 57);
   cursor: pointer;
 }
