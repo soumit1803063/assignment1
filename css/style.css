@@ -179,6 +179,7 @@ header .navigation-section {
   font-size: 12px;
   font-weight: 400;
 }
+
 /* Vision Section */
 #vision-section {
   width: 909px;
@@ -473,10 +474,21 @@ header .navigation-section {
 #subscribe .container .inputs input[type="button"] {
   padding: 12px 24px;
   margin-bottom: 18px;
-  border: none;
+  border: 1px solid rgb(0, 106, 80);
   border-radius: 0px 6px 6px 0px;
   background: rgb(0, 106, 80);
   color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+}
+#subscribe .container .inputs input[type="button"]:hover {
+  padding: 12px 24px;
+  margin-bottom: 18px;
+  border: 1px solid rgb(0, 106, 80);
+  border-radius: 0px 6px 6px 0px;
+  color: rgb(0, 106, 80);
+  background-color: rgb(255, 255, 255);
   font-size: 13px;
   font-weight: 600;
   text-align: left;
@@ -550,4 +562,11 @@ header .navigation-section {
   border-radius: 11px;
   background: rgba(211, 19, 19);
   color: white;
+}
+
+.card:hover {
+  background-color: rgb(252, 225, 225);
+}
+#pillars-section .container .item:hover {
+  background-color: rgb(247, 220, 220);
 }
