@@ -391,6 +391,96 @@ header .navigation-section {
   border-radius: 11px;
   background: rgb(198, 228, 214);
 }
+#donate input[type="text"] {
+  display: block;
+  margin: 32px 88px;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  background: rgb(255, 255, 255);
+  padding: 14px 28px;
+  width: 680px;
+  color: rgba(14, 14, 14, 0.3);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#donate button {
+  display: block;
+  margin: 0 auto;
+}
+
+#subscribe {
+  width: 909px;
+  margin: 0 auto;
+  margin-top: 56px;
+  border-radius: 17px;
+  background: rgb(198, 228, 214);
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+#subscribe .container {
+  display: block;
+  margin: 0 188px;
+}
+
+#subscribe .container .title {
+  width: 442px;
+  margin: 0 auto;
+  margin-bottom: 11px;
+  color: rgb(14, 14, 14);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+#subscribe .container .description {
+  width: 442px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#subscribe .container .footer {
+  width: 442px;
+  margin: 0 auto;
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+}
+#subscribe .container .inputs {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+#subscribe .container .inputs input[type="email"] {
+  width: 426px;
+  padding: 13px 28px;
+  margin-bottom: 18px;
+  border: none;
+  border-radius: 6px 0px 0px 6px;
+  background: rgb(255, 255, 255);
+  color: rgba(14, 14, 14, 0.3);
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+}
+
+#subscribe .container .inputs input[type="button"] {
+  padding: 12px 24px;
+  margin-bottom: 18px;
+  border: none;
+  border-radius: 0px 6px 6px 0px;
+  background: rgb(0, 106, 80);
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+}
 /* Hover */
 .button-primary:hover {
   border: 1px solid rgb(0, 106, 80);
@@ -431,21 +521,4 @@ header .navigation-section {
   border-radius: 11px;
   background: rgba(211, 19, 19);
   color: white;
-}
-#donate input[type="text"] {
-  display: block;
-  margin: 32px 88px;
-  border: 1px solid rgba(14, 14, 14, 0.15);
-  background: rgb(255, 255, 255);
-  padding: 14px 28px;
-  width: 680px;
-  color: rgba(14, 14, 14, 0.3);
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-}
-
-#donate button {
-  display: block;
-  margin: 0 auto;
 }
